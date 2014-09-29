@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chat</class>
+ <widget class="QDialog" name="chat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>私聊中</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#chat{background-image:url(:/imgs/imgs/chatBk.png)}</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>451</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+border-radius:3px;
+background-color: rgba(255, 255, 255, 180);</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>451</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+border-radius:3px;
+background-color: rgba(255, 255, 255, 180);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>460</y>
+     <width>83</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+border-radius:3px;
+color:white;
+background-color:rgb(178, 210, 230) ;</string>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>460</y>
+     <width>83</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+border-radius:3px;
+color:white;
+background-color:rgb(235, 219, 124) ;</string>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>354</y>
+     <width>451</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px;
+border-radius:3px;
+</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QFontComboBox" name="fontComboBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>2</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>文泉驿微米黑</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{background-color: rgba(255, 255, 255, 180);}
+QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 180);
+  border-top-left-radius: 3px; /* same radius as the QComboBox */
+  border-bottom-left-radius: 3px;
+}
+
+QComboBox::down-arrow {
+  image: url(:/imgs/imgs/drop_down.png);
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>38</number>
+    </property>
+    <property name="maxVisibleItems">
+     <number>10</number>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="fontsizecomboBox">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>2</y>
+      <width>51</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QComboBox{
+background-color: rgba(255, 255, 255, 180);
+}
+QComboBox::drop-down {
+  subcontrol-origin: padding;
+  subcontrol-position: top right;
+  width: 20px;
+  border-top-left-radius: 3px; /* same radius as the QComboBox */
+  border-bottom-left-radius: 3px;
+}
+QComboBox::down-arrow {
+  image: url(:/imgs/imgs/drop_down.png);
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>14</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>15</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>16</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>17</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>18</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>20</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QToolButton" name="textbold">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/bo.ico</normaloff>:/imgs/imgs/bo.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="textUnderline">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/u.ico</normaloff>:/imgs/imgs/u.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="textitalic">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/i.ico</normaloff>:/imgs/imgs/i.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="textcolor">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/color.ico</normaloff>:/imgs/imgs/color.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="sendFile">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/send.ico</normaloff>:/imgs/imgs/send.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/20140919013333834_easyicon_net_72.ico</normaloff>:/imgs/imgs/20140919013333834_easyicon_net_72.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="clear">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="imgs.qrc">
+      <normaloff>:/imgs/imgs/clean.ico</normaloff>:/imgs/imgs/clean.ico</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>451</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>与。。。聊天中     对方ip:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

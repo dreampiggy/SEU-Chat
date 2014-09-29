@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>imgs/Bold.ico</file>
+        <file>imgs/Clean.ico</file>
+        <file>imgs/Color.ico</file>
+        <file>imgs/Italic.ico</file>
+        <file>imgs/Save.ico</file>
+        <file>imgs/sendFile.ico</file>
+        <file>imgs/Underline.ico</file>
+        <file>imgs/chatRoomImg.jpg</file>
+        <file>imgs/sendFile.png</file>
+        <file>imgs/LogonImg.png</file>
+        <file>imgs/loginBk.png</file>
+        <file>imgs/chatRoomImg.png</file>
+        <file>imgs/chatBk.png</file>
+        <file>imgs/chatRoomBk.png</file>
+        <file>imgs/serverIP.txt</file>
+        <file>imgs/drop_down.png</file>
+        <file>imgs/i.ico</file>
+        <file>imgs/u.ico</file>
+        <file>imgs/clean.ico</file>
+        <file>imgs/bo.ico</file>
+        <file>imgs/send.ico</file>
+        <file>imgs/color.ico</file>
+        <file>imgs/20140919013333834_easyicon_net_72.ico</file>
+    </qresource>
+</RCC>
